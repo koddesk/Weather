@@ -14,6 +14,8 @@
 		243E09F8286E0BB400A820AF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243E09F7286E0BB400A820AF /* Extensions.swift */; };
 		243E09FC286E0D0700A820AF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243E09FB286E0D0700A820AF /* HomeView.swift */; };
 		249E6C1E286EFBCC00D50E12 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249E6C1D286EFBCC00D50E12 /* Shapes.swift */; };
+		249E6C21286F14B300D50E12 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 249E6C20286F14B300D50E12 /* BottomSheet */; };
+		249E6C23286F16D200D50E12 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249E6C22286F16D200D50E12 /* ForecastView.swift */; };
 		24E755B9286EF5EA004D8C64 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E755B8286EF5EA004D8C64 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,7 @@
 		243E09F7286E0BB400A820AF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		243E09FB286E0D0700A820AF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		249E6C1D286EFBCC00D50E12 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		249E6C22286F16D200D50E12 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 		24E755B8286EF5EA004D8C64 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -34,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249E6C21286F14B300D50E12 /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +128,7 @@
 		243E09F5286E0B3800A820AF /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				249E6C22286F16D200D50E12 /* ForecastView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -151,6 +156,9 @@
 			dependencies = (
 			);
 			name = Weather;
+			packageProductDependencies = (
+				249E6C20286F14B300D50E12 /* BottomSheet */,
+			);
 			productName = Weather;
 			productReference = 243E09DF286E08D200A820AF /* Weather.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 243E09D6286E08D200A820AF;
+			packageReferences = (
+				249E6C1F286F14B300D50E12 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
 			productRefGroup = 243E09E0286E08D200A820AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,6 +220,7 @@
 				243E09FC286E0D0700A820AF /* HomeView.swift in Sources */,
 				243E09F8286E0BB400A820AF /* Extensions.swift in Sources */,
 				243E09E3286E08D200A820AF /* WeatherApp.swift in Sources */,
+				249E6C23286F16D200D50E12 /* ForecastView.swift in Sources */,
 				24E755B9286EF5EA004D8C64 /* TabBar.swift in Sources */,
 				249E6C1E286EFBCC00D50E12 /* Shapes.swift in Sources */,
 			);
@@ -411,6 +423,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		249E6C1F286F14B300D50E12 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Wouter125/BottomSheet";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		249E6C20286F14B300D50E12 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 249E6C1F286F14B300D50E12 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 243E09D7286E08D200A820AF /* Project object */;
 }
