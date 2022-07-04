@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		242194402873896A00DC0D31 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2421943F2873896A00DC0D31 /* SegmentedControl.swift */; };
+		242194422873931300DC0D31 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242194412873931300DC0D31 /* ForecastModel.swift */; };
 		243E09E3286E08D200A820AF /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243E09E2286E08D200A820AF /* WeatherApp.swift */; };
 		243E09E5286E08D200A820AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243E09E4286E08D200A820AF /* ContentView.swift */; };
 		243E09E7286E08D300A820AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 243E09E6286E08D300A820AF /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		2421943F2873896A00DC0D31 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		242194412873931300DC0D31 /* ForecastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
 		243E09DF286E08D200A820AF /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		243E09E2286E08D200A820AF /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		243E09E4286E08D200A820AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		243E09F1286E0ACF00A820AF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				242194412873931300DC0D31 /* ForecastModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				249E6C23286F16D200D50E12 /* ForecastView.swift in Sources */,
 				24E755B9286EF5EA004D8C64 /* TabBar.swift in Sources */,
 				249E6C1E286EFBCC00D50E12 /* Shapes.swift in Sources */,
+				242194422873931300DC0D31 /* ForecastModel.swift in Sources */,
 				242194402873896A00DC0D31 /* SegmentedControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
